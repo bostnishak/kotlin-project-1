@@ -24,3 +24,15 @@ data class Book(
         return "$title by $($author.name) [$genre] - $status"
     }
 }
+
+class User(
+    val id: String,
+    val name: String,
+    val email: String
+) {
+    val borrowedBooks = mutableListOf<Book>()
+
+    fun borrow(book: Book) { borrowedBooks.add(book) }
+    fun returnBook(book: Book) { borrowedBooks.remove(book) }
+    fun getBorrowedCount(): Int = borrowedBooks.size
+}
