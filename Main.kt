@@ -7,6 +7,12 @@
 
 class TaskManager {
     private val tasks = mutableListOf<Task>()
+
+    fun addTask(name: String) {
+        val task = Task(name)
+        tasks.add(task)
+        println("Added: $name")
+    }
 }
 
 fun main() {
