@@ -10,4 +10,13 @@ class Library(val name: String) {
     fun printStatus() {
         println("Library $name has $($books.size) books and $($users.size) users.")
     }
+
+    fun addBook(book: Book) {
+        if (!books.containsKey(book.isbn)) {
+            books[book.isbn] = book
+            println("Added book: $($book.title)")
+        } else {
+            println("Book with ISBN $($book.isbn) already exists.")
+        }
+    }
 }
