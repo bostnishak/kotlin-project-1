@@ -8,4 +8,5 @@
 fun main() {
     println("Welcome to Task Manager")
     val task1 = Task("Learn Kotlin")
+    println("Created task: ${task1.name}")
 }
