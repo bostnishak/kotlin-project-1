@@ -17,3 +17,21 @@ data class LibraryTransaction(
         return "[$timestamp] $type: User $userId -> Book $bookIsbn"
     }
 }
+
+class TransactionManager {
+    private val transactions = mutableListOf<LibraryTransaction>()
+
+    fun recordTransaction(transaction: LibraryTransaction) {
+        transactions.add(transaction)
+    }
+
+    fun getTransactionsForUser(userId: String): List<LibraryTransaction> {
+        return transactions.filter { it.userId == userId }
+    }
+
+    fun printHistory() {
+        println("--- Transaction History ---")
+        if (transactions.isEmpty()) println("No transactions recorded yet.")
+        transactions.forEach { println(it.summary()) }
+    }
+}
