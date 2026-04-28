@@ -39,4 +39,5 @@ fun main() {
     manager.addTask("Learn Kotlin")
     manager.addTask("Write 15 commits")
     manager.listTasks()
+    manager.completeTask("Learn Kotlin")
 }
