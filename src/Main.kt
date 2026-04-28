@@ -19,5 +19,9 @@ fun main() {
     library.registerUser(user1)
     library.registerUser(user2)
     
+    println("\n--- Simulating Actions ---")
+    library.borrowBook("u1", "isbn1")
+    library.borrowBook("u2", "isbn2")
+    
     library.printStatus()
 }
