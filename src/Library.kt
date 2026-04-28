@@ -5,6 +5,7 @@ class Library(val name: String) {
     private val users = mutableMapOf<String, User>()
     private val transactionManager = TransactionManager()
     private val reviewManager = ReviewManager()
+    private val notificationService: NotificationService = EmailNotificationService()
 
     fun getBookCount(): Int = books.size
     fun getUserCount(): Int = users.size
@@ -31,6 +32,7 @@ class Library(val name: String) {
         if (!users.containsKey(user.id)) {
             users[user.id] = user
             println("Registered user: $($user.name)")
+            notificationService.sendNotification(user.id, "Welcome to $name!")
         }
     }
 
@@ -49,6 +51,7 @@ class Library(val name: String) {
             user.borrow(book)
             record(userId, isbn, TransactionType.BORROW)
             println("$($user.name) successfully borrowed $($book.title)")
+            notificationService.sendNotification(userId, "You borrowed $($book.title). Enjoy!")
             return true
         }
         println("Could not borrow book.")
@@ -64,6 +67,7 @@ class Library(val name: String) {
             user.returnBook(book)
             record(userId, isbn, TransactionType.RETURN)
             println("$($user.name) returned $($book.title)")
+            notificationService.sendNotification(userId, "Thank you for returning $($book.title).")
             return true
         }
         println("Could not return book.")
