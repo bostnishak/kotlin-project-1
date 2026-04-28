@@ -21,10 +21,18 @@ class TaskManager {
             println("$status ${task.name}")
         }
     }
+    
+    fun completeTask(name: String) {
+        val task = tasks.find { it.name == name }
+        if (task != null) {
+            task.complete()
+        } else {
+            println("Task not found")
+        }
+    }
 }
 
 fun main() {
     println("Welcome to Task Manager")
-    val task1 = Task("Learn Kotlin")
-    println("Created task: ${task1.name}")
+    val manager = TaskManager()
 }
