@@ -5,6 +5,10 @@
     }
 }
 
+class TaskManager {
+    private val tasks = mutableListOf<Task>()
+}
+
 fun main() {
     println("Welcome to Task Manager")
     val task1 = Task("Learn Kotlin")
