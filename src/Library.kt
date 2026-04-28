@@ -3,6 +3,7 @@
 class Library(val name: String) {
     private val books = mutableMapOf<String, Book>()
     private val users = mutableMapOf<String, User>()
+    private val transactionManager = TransactionManager()
 
     fun getBookCount(): Int = books.size
     fun getUserCount(): Int = users.size
@@ -32,6 +33,12 @@ class Library(val name: String) {
         }
     }
 
+    private fun record(userId: String, isbn: String, type: TransactionType) {
+        val id = java.util.UUID.randomUUID().toString()
+        val tx = LibraryTransaction(id, userId, isbn, type)
+        transactionManager.recordTransaction(tx)
+    }
+
     fun borrowBook(userId: String, isbn: String): Boolean {
         val user = users[userId]
         val book = books[isbn]
@@ -39,6 +46,7 @@ class Library(val name: String) {
         if (user != null && book != null && book.isAvailable) {
             book.isAvailable = false
             user.borrow(book)
+            record(userId, isbn, TransactionType.BORROW)
             println("$($user.name) successfully borrowed $($book.title)")
             return true
         }
@@ -53,10 +61,15 @@ class Library(val name: String) {
         if (user != null && book != null && user.borrowedBooks.contains(book)) {
             book.isAvailable = true
             user.returnBook(book)
+            record(userId, isbn, TransactionType.RETURN)
             println("$($user.name) returned $($book.title)")
             return true
         }
         println("Could not return book.")
         return false
+    }
+
+    fun printTransactionHistory() {
+        transactionManager.printHistory()
     }
 }
