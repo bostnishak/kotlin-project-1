@@ -23,5 +23,10 @@ fun main() {
     library.borrowBook("u1", "isbn1")
     library.borrowBook("u2", "isbn2")
     
+    library.returnBook("u1", "isbn1")
+    library.addReview("u1", "isbn1", 5, "Amazing book! A true classic.")
+    
+    println("\n--- Final Reports ---")
     library.printStatus()
+    library.printTransactionHistory()
 }
