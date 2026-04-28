@@ -31,4 +31,18 @@ class Library(val name: String) {
             println("Registered user: $($user.name)")
         }
     }
+
+    fun borrowBook(userId: String, isbn: String): Boolean {
+        val user = users[userId]
+        val book = books[isbn]
+
+        if (user != null && book != null && book.isAvailable) {
+            book.isAvailable = false
+            user.borrow(book)
+            println("$($user.name) successfully borrowed $($book.title)")
+            return true
+        }
+        println("Could not borrow book.")
+        return false
+    }
 }
