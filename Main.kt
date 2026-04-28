@@ -16,6 +16,7 @@ class TaskManager {
 
     fun listTasks() {
         println("Current Tasks:")
+        if (tasks.isEmpty()) println("No tasks available.")
         for (task in tasks) {
             val status = if (task.isCompleted) "[X]" else "[ ]"
             println("$status ${task.name}")
