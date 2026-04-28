@@ -13,6 +13,14 @@ class TaskManager {
         tasks.add(task)
         println("Added: $name")
     }
+
+    fun listTasks() {
+        println("Current Tasks:")
+        for (task in tasks) {
+            val status = if (task.isCompleted) "[X]" else "[ ]"
+            println("$status ${task.name}")
+        }
+    }
 }
 
 fun main() {
