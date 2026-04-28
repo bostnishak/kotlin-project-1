@@ -35,4 +35,6 @@ class TaskManager {
 fun main() {
     println("Welcome to Task Manager")
     val manager = TaskManager()
+    manager.addTask("Learn Kotlin")
+    manager.addTask("Write 15 commits")
 }
