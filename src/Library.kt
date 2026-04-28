@@ -4,6 +4,7 @@ class Library(val name: String) {
     private val books = mutableMapOf<String, Book>()
     private val users = mutableMapOf<String, User>()
     private val transactionManager = TransactionManager()
+    private val reviewManager = ReviewManager()
 
     fun getBookCount(): Int = books.size
     fun getUserCount(): Int = users.size
@@ -67,6 +68,13 @@ class Library(val name: String) {
         }
         println("Could not return book.")
         return false
+    }
+
+    fun addReview(userId: String, isbn: String, rating: Int, comment: String) {
+        if (users.containsKey(userId) && books.containsKey(isbn)) {
+            reviewManager.addReview(BookReview(userId, isbn, rating, comment))
+            println("Review added for $($books[isbn]?.title)")
+        }
     }
 
     fun printTransactionHistory() {
