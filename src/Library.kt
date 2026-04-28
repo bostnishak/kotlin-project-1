@@ -19,4 +19,16 @@ class Library(val name: String) {
             println("Book with ISBN $($book.isbn) already exists.")
         }
     }
+
+    fun removeBook(isbn: String) {
+        val removed = books.remove(isbn)
+        if (removed != null) println("Removed book: $($removed.title)")
+    }
+
+    fun registerUser(user: User) {
+        if (!users.containsKey(user.id)) {
+            users[user.id] = user
+            println("Registered user: $($user.name)")
+        }
+    }
 }
