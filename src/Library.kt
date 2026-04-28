@@ -45,4 +45,18 @@ class Library(val name: String) {
         println("Could not borrow book.")
         return false
     }
+
+    fun returnBook(userId: String, isbn: String): Boolean {
+        val user = users[userId]
+        val book = books[isbn]
+
+        if (user != null && book != null && user.borrowedBooks.contains(book)) {
+            book.isAvailable = true
+            user.returnBook(book)
+            println("$($user.name) returned $($book.title)")
+            return true
+        }
+        println("Could not return book.")
+        return false
+    }
 }
