@@ -13,5 +13,11 @@ fun main() {
     library.addBook(book1)
     library.addBook(book2)
     
+    val user1 = User("u1", "Alice Smith", "alice@example.com")
+    val user2 = User("u2", "Bob Jones", "bob@example.com")
+    
+    library.registerUser(user1)
+    library.registerUser(user2)
+    
     library.printStatus()
 }
