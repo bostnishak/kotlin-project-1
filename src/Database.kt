@@ -19,4 +19,9 @@ object Database {
     fun saveRecord(table: String, data: String) {
         executeQuery("INSERT INTO $table VALUES ($data)")
     }
+
+    fun disconnect() {
+        println("Disconnecting from database...")
+        isConnected = false
+    }
 }
