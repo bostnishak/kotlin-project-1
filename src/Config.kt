@@ -5,3 +5,5 @@ data class AppConfig(
     val version: String = "1.0.0",
     val maxUsers: Int = 1000
 )
+
+val defaultConfig = AppConfig()
