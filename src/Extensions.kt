@@ -8,3 +8,7 @@ fun String.truncate(maxLength: Int): String {
     if (this.length <= maxLength) return this
     return this.substring(0, maxLength - 3) + "..."
 }
+
+fun Boolean.toYesNo(): String {
+    return if (this) "Yes" else "No"
+}
