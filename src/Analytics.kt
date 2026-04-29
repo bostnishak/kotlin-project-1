@@ -3,6 +3,7 @@
 object Analytics {
     private val eventLogs = mutableListOf<String>()
     private val bookViews = mutableMapOf<String, Int>()
+    private var searchQueries = 0
 
     fun logEvent(event: String) {
         eventLogs.add(event)
@@ -12,5 +13,10 @@ object Analytics {
         val count = bookViews.getOrDefault(isbn, 0)
         bookViews[isbn] = count + 1
         logEvent("Viewed book: $isbn")
+    }
+
+    fun logSearchQuery(query: String) {
+        searchQueries++
+        logEvent("User searched for: $query")
     }
 }
