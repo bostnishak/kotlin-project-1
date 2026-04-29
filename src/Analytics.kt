@@ -24,4 +24,8 @@ object Analytics {
     fun logUserActive(userId: String) {
         activeUsers.add(userId)
     }
+
+    fun getStats(): String {
+        return "Total Searches: $searchQueries, Active Users: $($activeUsers.size)"
+    }
 }
