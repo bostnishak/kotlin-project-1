@@ -15,4 +15,8 @@ object Database {
         }
         println("Executing: $sql")
     }
+
+    fun saveRecord(table: String, data: String) {
+        executeQuery("INSERT INTO $table VALUES ($data)")
+    }
 }
