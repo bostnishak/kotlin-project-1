@@ -14,3 +14,4 @@ fun lengthOfString(s: String): Int = s.length
 fun toUpperCase(s: String): String = s.uppercase()
 fun toLowerCase(s: String): String = s.lowercase()
 fun isBlank(s: String): Boolean = s.isBlank()
+fun isEmpty(s: String): Boolean = s.isEmpty()
