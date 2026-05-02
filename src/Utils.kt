@@ -12,3 +12,4 @@ fun max(a: Int, b: Int): Int = if (a > b) a else b
 fun factorial(n: Int): Int = if (n <= 1) 1 else n * factorial(n - 1)
 fun lengthOfString(s: String): Int = s.length
 fun toUpperCase(s: String): String = s.uppercase()
+fun toLowerCase(s: String): String = s.lowercase()
