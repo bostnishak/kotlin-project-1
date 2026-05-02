@@ -10,3 +10,4 @@ fun cube(n: Int): Int = n * n * n
 fun greet(name: String): String = "Hello, $name!"
 fun max(a: Int, b: Int): Int = if (a > b) a else b
 fun factorial(n: Int): Int = if (n <= 1) 1 else n * factorial(n - 1)
+fun lengthOfString(s: String): Int = s.length
