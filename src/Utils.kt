@@ -8,3 +8,4 @@ fun isOdd(n: Int): Boolean = n % 2 != 0
 fun square(n: Int): Int = n * n
 fun cube(n: Int): Int = n * n * n
 fun greet(name: String): String = "Hello, $name!"
+fun max(a: Int, b: Int): Int = if (a > b) a else b
