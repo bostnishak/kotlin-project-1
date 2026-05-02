@@ -20,3 +20,4 @@ fun halfValue(n: Int): Double = n / 2.0
 fun isPositive(n: Int): Boolean = n > 0
 fun isNegative(n: Int): Boolean = n < 0
 fun isZero(n: Int): Boolean = n == 0
+fun containsVowel(s: String): Boolean = s.any { it.lowercaseChar() in "aeiou" }
