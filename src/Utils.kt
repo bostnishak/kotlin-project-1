@@ -6,3 +6,4 @@ fun divide(a: Int, b: Int): Double = a.toDouble() / b
 fun isEven(n: Int): Boolean = n % 2 == 0
 fun isOdd(n: Int): Boolean = n % 2 != 0
 fun square(n: Int): Int = n * n
+fun cube(n: Int): Int = n * n * n
