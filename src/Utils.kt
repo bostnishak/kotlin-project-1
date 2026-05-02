@@ -16,3 +16,4 @@ fun toLowerCase(s: String): String = s.lowercase()
 fun isBlank(s: String): Boolean = s.isBlank()
 fun isEmpty(s: String): Boolean = s.isEmpty()
 fun doubleValue(n: Int): Int = n * 2
+fun halfValue(n: Int): Double = n / 2.0
