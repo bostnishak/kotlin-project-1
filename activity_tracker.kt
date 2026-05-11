@@ -54,3 +54,7 @@ fun retry(times: Int, block: () -> Unit) {
     }
 }
 
+fun bytesToHex(bytes: ByteArray): String {
+    return bytes.joinToString("") { "%02x".format(it) }
+}
+
