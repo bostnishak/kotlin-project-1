@@ -62,3 +62,7 @@ fun splitChunks(list: List<Int>, size: Int): List<List<Int>> {
     return list.chunked(size)
 }
 
+fun mapToQueryString(params: Map<String, String>): String {
+    return params.entries.joinToString("&") { "=" }
+}
+
