@@ -6,3 +6,8 @@ fun validateInput(input: String): Boolean {
     return regex.matches(input)
 }
 
+fun formatDate(timestamp: Long): String {
+    val sdf = java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    return sdf.format(java.util.Date(timestamp))
+}
+
