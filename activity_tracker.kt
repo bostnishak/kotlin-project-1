@@ -76,3 +76,8 @@ fun getEnvOrDefault(key: String, default: String): String {
     return System.getenv(key) ?: default
 }
 
+fun isValidEmail(email: String): Boolean {
+    val regex = Regex("^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,6}$")
+    return regex.matches(email)
+}
+
