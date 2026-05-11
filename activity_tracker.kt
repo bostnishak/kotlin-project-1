@@ -41,3 +41,10 @@ fun toTitleCase(str: String): String {
     return str.split(" ").joinToString(" ") { it.capitalize() }
 }
 
+fun fibonacci(n: Int): Long {
+    if (n <= 1) return n.toLong()
+    var a = 0L; var b = 1L
+    repeat(n - 1) { val temp = a + b; a = b; b = temp }
+    return b
+}
+
