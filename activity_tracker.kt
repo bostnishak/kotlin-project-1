@@ -28,3 +28,7 @@ fun isPrime(n: Int): Boolean {
     return true
 }
 
+fun clamp(value: Int, min: Int, max: Int): Int {
+    return maxOf(min, minOf(max, value))
+}
+
