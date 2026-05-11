@@ -58,3 +58,7 @@ fun bytesToHex(bytes: ByteArray): String {
     return bytes.joinToString("") { "%02x".format(it) }
 }
 
+fun splitChunks(list: List<Int>, size: Int): List<List<Int>> {
+    return list.chunked(size)
+}
+
