@@ -37,3 +37,7 @@ fun countWords(text: String): Int {
     return text.trim().split(Regex("\s+")).size
 }
 
+fun toTitleCase(str: String): String {
+    return str.split(" ").joinToString(" ") { it.capitalize() }
+}
+
