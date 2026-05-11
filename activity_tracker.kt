@@ -81,3 +81,7 @@ fun isValidEmail(email: String): Boolean {
     return regex.matches(email)
 }
 
+fun truncate(text: String, maxLen: Int): String {
+    return if (text.length <= maxLen) text else text.take(maxLen) + "..."
+}
+
