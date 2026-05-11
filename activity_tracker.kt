@@ -11,3 +11,8 @@ fun formatDate(timestamp: Long): String {
     return sdf.format(java.util.Date(timestamp))
 }
 
+fun calculateAverage(numbers: List<Double>): Double {
+    if (numbers.isEmpty()) return 0.0
+    return numbers.sum() / numbers.size
+}
+
