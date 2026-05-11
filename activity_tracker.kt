@@ -32,3 +32,8 @@ fun clamp(value: Int, min: Int, max: Int): Int {
     return maxOf(min, minOf(max, value))
 }
 
+fun countWords(text: String): Int {
+    if (text.isBlank()) return 0
+    return text.trim().split(Regex("\s+")).size
+}
+
