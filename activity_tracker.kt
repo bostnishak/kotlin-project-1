@@ -96,3 +96,7 @@ fun median(numbers: List<Double>): Double {
     return if (sorted.size % 2 == 0) (sorted[mid - 1] + sorted[mid]) / 2 else sorted[mid]
 }
 
+fun groupByFirstChar(words: List<String>): Map<Char, List<String>> {
+    return words.groupBy { it.first() }
+}
+
