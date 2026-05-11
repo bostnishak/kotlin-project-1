@@ -48,3 +48,9 @@ fun fibonacci(n: Int): Long {
     return b
 }
 
+fun retry(times: Int, block: () -> Unit) {
+    repeat(times) {
+        try { block(); return } catch (e: Exception) { }
+    }
+}
+
