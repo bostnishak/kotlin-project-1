@@ -16,3 +16,7 @@ fun calculateAverage(numbers: List<Double>): Double {
     return numbers.sum() / numbers.size
 }
 
+fun reverseString(input: String): String {
+    return input.reversed()
+}
+
