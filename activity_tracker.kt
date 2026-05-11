@@ -72,3 +72,7 @@ fun readableFileSize(size: Long): String {
     return if (mb >= 1) "%.2f MB".format(mb) else "%.2f KB".format(kb)
 }
 
+fun getEnvOrDefault(key: String, default: String): String {
+    return System.getenv(key) ?: default
+}
+
