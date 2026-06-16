@@ -820,3 +820,9 @@ fun contribution_28781_3() {
     val b = 3
     println("Contribution $i at 2026-06-16 11:19:55")
 }
+
+fun contribution_5250_4() {
+    val a = 5250
+    val b = 4
+    println("Contribution $i at 2026-06-16 11:20:00")
+}
