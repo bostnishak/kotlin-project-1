@@ -26,3 +26,10 @@ fun fun_LcpazAJn() {
     println(z)
 }
 
+fun fun_TArjXiUo() {
+    val x = 5
+    val y = 5 * 2
+    val z = x + y
+    println(z)
+}
+
