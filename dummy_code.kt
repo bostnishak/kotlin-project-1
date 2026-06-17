@@ -131,3 +131,10 @@ fun fun_iFdjVvwI() {
     println(z)
 }
 
+fun fun_itSGVeas() {
+    val x = 20
+    val y = 20 * 2
+    val z = x + y
+    println(z)
+}
+
