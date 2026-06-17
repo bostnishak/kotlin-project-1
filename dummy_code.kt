@@ -47,3 +47,10 @@ fun fun_FKwUCEBG() {
     println(z)
 }
 
+fun fun_rTjpLxug() {
+    val x = 8
+    val y = 8 * 2
+    val z = x + y
+    println(z)
+}
+
