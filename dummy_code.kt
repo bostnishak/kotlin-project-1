@@ -117,3 +117,10 @@ fun fun_ytgeYaji() {
     println(z)
 }
 
+fun fun_IacgzdKm() {
+    val x = 18
+    val y = 18 * 2
+    val z = x + y
+    println(z)
+}
+
