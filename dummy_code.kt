@@ -33,3 +33,10 @@ fun fun_TArjXiUo() {
     println(z)
 }
 
+fun fun_CQbrtISZ() {
+    val x = 6
+    val y = 6 * 2
+    val z = x + y
+    println(z)
+}
+
