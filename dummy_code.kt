@@ -68,3 +68,10 @@ fun fun_jcgtfBeJ() {
     println(z)
 }
 
+fun fun_yhnVDrOR() {
+    val x = 11
+    val y = 11 * 2
+    val z = x + y
+    println(z)
+}
+
