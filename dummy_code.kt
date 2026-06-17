@@ -138,3 +138,10 @@ fun fun_itSGVeas() {
     println(z)
 }
 
+fun fun_EjdiUHxe() {
+    val x = 21
+    val y = 21 * 2
+    val z = x + y
+    println(z)
+}
+
