@@ -159,3 +159,10 @@ fun fun_mUoBbWIi() {
     println(z)
 }
 
+fun fun_ROKJqidE() {
+    val x = 24
+    val y = 24 * 2
+    val z = x + y
+    println(z)
+}
+
