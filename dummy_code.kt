@@ -166,3 +166,10 @@ fun fun_ROKJqidE() {
     println(z)
 }
 
+fun fun_mjMTCbSl() {
+    val x = 25
+    val y = 25 * 2
+    val z = x + y
+    println(z)
+}
+
