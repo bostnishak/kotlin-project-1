@@ -40,3 +40,10 @@ fun fun_CQbrtISZ() {
     println(z)
 }
 
+fun fun_FKwUCEBG() {
+    val x = 7
+    val y = 7 * 2
+    val z = x + y
+    println(z)
+}
+
