@@ -89,3 +89,10 @@ fun fun_oRyxUCHJ() {
     println(z)
 }
 
+fun fun_NxEwhCPz() {
+    val x = 14
+    val y = 14 * 2
+    val z = x + y
+    println(z)
+}
+
