@@ -75,3 +75,10 @@ fun fun_yhnVDrOR() {
     println(z)
 }
 
+fun fun_CnptShRj() {
+    val x = 12
+    val y = 12 * 2
+    val z = x + y
+    println(z)
+}
+
