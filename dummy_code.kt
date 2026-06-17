@@ -82,3 +82,10 @@ fun fun_CnptShRj() {
     println(z)
 }
 
+fun fun_oRyxUCHJ() {
+    val x = 13
+    val y = 13 * 2
+    val z = x + y
+    println(z)
+}
+
