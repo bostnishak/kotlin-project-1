@@ -187,3 +187,10 @@ fun fun_XEFImizk() {
     println(z)
 }
 
+fun fun_YTlyehRw() {
+    val x = 28
+    val y = 28 * 2
+    val z = x + y
+    println(z)
+}
+
