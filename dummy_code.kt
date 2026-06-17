@@ -201,3 +201,10 @@ fun fun_dnfmtIpE() {
     println(z)
 }
 
+fun fun_Mjqtunle() {
+    val x = 30
+    val y = 30 * 2
+    val z = x + y
+    println(z)
+}
+
