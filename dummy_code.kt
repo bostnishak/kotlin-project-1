@@ -152,3 +152,10 @@ fun fun_hjsgDdUf() {
     println(z)
 }
 
+fun fun_mUoBbWIi() {
+    val x = 23
+    val y = 23 * 2
+    val z = x + y
+    println(z)
+}
+
