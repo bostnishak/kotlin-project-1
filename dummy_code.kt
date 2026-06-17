@@ -103,3 +103,10 @@ fun fun_kXcnaEqN() {
     println(z)
 }
 
+fun fun_axhKpJrn() {
+    val x = 16
+    val y = 16 * 2
+    val z = x + y
+    println(z)
+}
+
