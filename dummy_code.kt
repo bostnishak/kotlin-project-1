@@ -96,3 +96,10 @@ fun fun_NxEwhCPz() {
     println(z)
 }
 
+fun fun_kXcnaEqN() {
+    val x = 15
+    val y = 15 * 2
+    val z = x + y
+    println(z)
+}
+
