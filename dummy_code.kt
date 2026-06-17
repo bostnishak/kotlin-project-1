@@ -180,3 +180,10 @@ fun fun_scTmAUBr() {
     println(z)
 }
 
+fun fun_XEFImizk() {
+    val x = 27
+    val y = 27 * 2
+    val z = x + y
+    println(z)
+}
+
