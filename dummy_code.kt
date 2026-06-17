@@ -12,3 +12,10 @@ fun fun_ELiQKIAv() {
     println(z)
 }
 
+fun fun_OknjRwlS() {
+    val x = 3
+    val y = 3 * 2
+    val z = x + y
+    println(z)
+}
+
