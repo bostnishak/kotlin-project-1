@@ -194,3 +194,10 @@ fun fun_YTlyehRw() {
     println(z)
 }
 
+fun fun_dnfmtIpE() {
+    val x = 29
+    val y = 29 * 2
+    val z = x + y
+    println(z)
+}
+
