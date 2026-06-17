@@ -61,3 +61,10 @@ fun fun_ZuyqmekY() {
     println(z)
 }
 
+fun fun_jcgtfBeJ() {
+    val x = 10
+    val y = 10 * 2
+    val z = x + y
+    println(z)
+}
+
