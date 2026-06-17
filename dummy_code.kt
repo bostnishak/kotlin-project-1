@@ -173,3 +173,10 @@ fun fun_mjMTCbSl() {
     println(z)
 }
 
+fun fun_scTmAUBr() {
+    val x = 26
+    val y = 26 * 2
+    val z = x + y
+    println(z)
+}
+
