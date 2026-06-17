@@ -54,3 +54,10 @@ fun fun_rTjpLxug() {
     println(z)
 }
 
+fun fun_ZuyqmekY() {
+    val x = 9
+    val y = 9 * 2
+    val z = x + y
+    println(z)
+}
+
