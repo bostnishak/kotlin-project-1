@@ -124,3 +124,10 @@ fun fun_IacgzdKm() {
     println(z)
 }
 
+fun fun_iFdjVvwI() {
+    val x = 19
+    val y = 19 * 2
+    val z = x + y
+    println(z)
+}
+
