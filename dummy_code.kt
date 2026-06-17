@@ -5,3 +5,10 @@
     println(z)
 }
 
+fun fun_ELiQKIAv() {
+    val x = 2
+    val y = 2 * 2
+    val z = x + y
+    println(z)
+}
+
