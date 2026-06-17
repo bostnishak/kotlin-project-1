@@ -19,3 +19,10 @@ fun fun_OknjRwlS() {
     println(z)
 }
 
+fun fun_LcpazAJn() {
+    val x = 4
+    val y = 4 * 2
+    val z = x + y
+    println(z)
+}
+
