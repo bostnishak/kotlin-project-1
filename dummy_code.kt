@@ -110,3 +110,10 @@ fun fun_axhKpJrn() {
     println(z)
 }
 
+fun fun_ytgeYaji() {
+    val x = 17
+    val y = 17 * 2
+    val z = x + y
+    println(z)
+}
+
