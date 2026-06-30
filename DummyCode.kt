@@ -13,3 +13,8 @@ fun dummyFunction3() {
     println("Line 3 for 3")
     println("Line 4 for 3")
 }
+fun dummyFunction4() {
+    println("Contribution log - loop 4")
+    println("Line 3 for 4")
+    println("Line 4 for 4")
+}
