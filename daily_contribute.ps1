@@ -13,12 +13,10 @@ for ($i = 1; $i -le $Count; $i++) {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     
     $code = @"
-
-// Daily contribution $i - $timestamp
 fun contribution_${batchId}_${i}() {
     val x = $i
     val y = $i * 10
-    println("Contribution `$i at $timestamp")
+    println("Contribution $i at $timestamp")
 }
 "@
 
