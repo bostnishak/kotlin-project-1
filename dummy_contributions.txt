@@ -23,3 +23,8 @@
 // Contribution 5 - Line 3
 // Contribution 5 - Line 4
 // Contribution 5 - Line 5
+// Contribution 6 - Line 1
+// Contribution 6 - Line 2
+// Contribution 6 - Line 3
+// Contribution 6 - Line 4
+// Contribution 6 - Line 5
