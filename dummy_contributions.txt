@@ -8,3 +8,8 @@
 // Contribution 2 - Line 3
 // Contribution 2 - Line 4
 // Contribution 2 - Line 5
+// Contribution 3 - Line 1
+// Contribution 3 - Line 2
+// Contribution 3 - Line 3
+// Contribution 3 - Line 4
+// Contribution 3 - Line 5
