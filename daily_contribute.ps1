@@ -1,33 +1,38 @@
-# Daily Automated Contribution Script
-# Usage: .\daily_contribute.ps1 [-Count 30]
 param (
     [int]$Count = 30
 )
 
-$filePath = "Contributions.kt"
+$fileToModify = "dummy_contribution.kt"
 $batchId = Get-Date -Format "yyyyMMdd_HHmmss"
 
-Write-Host "Starting daily contribution loop ($Count commits)..." -ForegroundColor Green
+Write-Host "Starting daily contribution script for Kotlin project ($Count iterations)..." -ForegroundColor Cyan
 
 for ($i = 1; $i -le $Count; $i++) {
-    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $currentDate = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     
-    $code = @"
-fun contribution_${batchId}_${i}() {
-    val x = $i
-    val y = $i * 10
-    println("Contribution $i at $timestamp")
-}
-"@
-
-    Add-Content -Path $filePath -Value $code -Encoding UTF8
+    # 5 satır Kotlin kodu
+    $codeLines = @(
+        "// Contribution $i - $currentDate",
+        "fun contribution_${batchId}_${i}() {",
+        "    val iteration = $i",
+        "    println(`"Contribution $iteration recorded at $currentDate`")",
+        "}"
+    )
     
-    git add $filePath
-    git commit -m "Automated daily contribution $i - $timestamp"
+    # Dosyaya 5 satır ekle
+    Add-Content -Path $fileToModify -Value $codeLines -Encoding UTF8
+    
+    Write-Host "[$i/$Count] Added 5 lines of code to $fileToModify" -ForegroundColor Yellow
+    
+    # Git işlemleri
+    git add $fileToModify
+    git commit -m "Auto commit for contribution: iteration $i ($currentDate)"
     git push
     
-    Write-Host "Committed and pushed $i/$Count" -ForegroundColor Cyan
+    Write-Host "[$i/$Count] Committed and pushed successfully." -ForegroundColor Green
+    
+    # GitHub rate limiting koruması için kısa bekleme
     Start-Sleep -Seconds 1
 }
 
-Write-Host "Completed all $Count contributions and pushed to GitHub successfully!" -ForegroundColor Green
+Write-Host "Completed all $Count contributions successfully!" -ForegroundColor Green
